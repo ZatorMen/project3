@@ -14,7 +14,6 @@ api = Api(app)
 api.add_resource(news_resources.NewsListResource, '/api/v2/news')
 api.add_resource(news_resources.NewsResource, '/api/v2/news/<int:news_id>')
 
-
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -109,7 +108,7 @@ def logout():
     return redirect("/")
 
 
-@app.route('/news',  methods=['GET', 'POST'])
+@app.route('/news', methods=['GET', 'POST'])
 @login_required
 def add_news():
     form = NewsForm()
