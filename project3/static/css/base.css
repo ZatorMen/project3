@@ -1,0 +1,61 @@
+body{
+	background-color: #416f9b !important;
+	background-image: url(../img/bllurred-bg.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1, h2{
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	font-size: 60px;
+	font-family: "Bree Serif";
+}
+
+.navbar-light{
+	background-color: #416f9b !important;
+}
+
+.button{
+	background-color: rgb(0, 91, 136);
+	color: #fff;
+	text-decoration: none;
+	padding: 12px 18px;
+	font-weight: 700;
+	opacity: 0.90;
+	transition: opacity 0.1s linear;
+}
+
+.main_con{
+	text-align: center;
+	width: 1000px;
+}
+
+.main_content{
+	color: white;
+	font-weight: 300;
+	font-size: 20px;
+	font-family: "Bree Serif";
+}
+
+.content{
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #416f9b;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.rounded{
+	margin-left: auto;
+    margin-right: auto;;
+    background-color: #416f9b;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Ваши записи</h1>
+{% for item in news%}
+    <div class="col-md6 border rounded">
+        <h3>Общий осмотр</h3>
+        <div>
+            {{item.content}}
+        </div>
+        <div>
+            Пациент - {{item.fio}}, Симптомы - {{item.about}}
+        </div>
+        {% if current_user.is_authenticated and current_user == item.user %}
+            <div>
+                <a href="/news_delete/{{ item.id }}" class="btn btn-danger">
+                    Отменить запись
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endfor %}
+
+{% if current_user.is_authenticated %}
+    <a href="record" class="button">Добавить запись</a>
+{% endif %}
+
+{% endblock %}
